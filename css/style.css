@@ -1,0 +1,35 @@
+:root {
+    --hide_color: #000;
+    --show_color: #fff;
+    --deco_color: #ff0000;
+    --centered_container: auto;
+}
+body {
+    text-align: center;
+    max-width: 800px;
+}
+body,
+.bg_over {
+    margin: var(--centered_container);
+}
+
+h1 {
+    color: var(--deco_color);
+}
+
+.bg_over {
+    max-width: 400px;
+    border: 2px solid var(--deco_color);
+    background-color: var(--hide_color);
+    color: var(--hide_color);
+}
+
+.bg_over:hover {
+    background-color: var(--show_color);
+    transition: 1s linear;
+}
+h4 {
+    text-align: right;
+    color: #0800ff;
+    text-transform: uppercase;
+}
